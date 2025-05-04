@@ -1,0 +1,36 @@
+[2025-04-20 13:31:03] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:31:03] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:31:03] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:32:54] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:32:54] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:32:54] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:32:54] DELETE_FAILED: ID 2 not found.
+[2025-04-20 13:43:50] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:43:50] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:43:50] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:44:48] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:44:48] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:44:48] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:48:47] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:48:47] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:48:47] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:48:57] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:48:57] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:48:57] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:49:07] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:49:07] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:49:07] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:50:02] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:50:02] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:50:02] UPDATE: Laptop (ID: 1) | New Qty: 12
+[2025-04-20 13:50:36] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:50:36] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:50:39] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:50:39] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:50:40] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:50:40] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:50:43] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:50:43] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:59:25] ADD: Laptop | Category: Electronics | Qty: 10 | Price: 999.99
+[2025-04-20 13:59:25] ADD: Chair | Category: Furniture | Qty: 20 | Price: 49.99
+[2025-04-20 13:59:25] UPDATE: Laptop (ID: 1) | New Qty: 12
