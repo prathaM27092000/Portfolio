@@ -23,20 +23,12 @@ The portfolio is built using the following technologies:
 * JavaScript
 * AOS (Animate on Scroll Library)
 
-## Projects
-
-Here are some of the projects featured in the portfolio:
-
-* **Inventory Management System:** A Python-based system for managing inventory, demonstrating skills in data structures, file handling, and object-oriented programming.
-* **Netflix Content Recommender:** A project involving the analysis of a large movie and show dataset, and the development of a content recommendation system.  Demonstrates skills in data analysis, database integration (MySQL), and potentially machine learning.
-
-## Contact
-
-You can reach me via:
-
 * Email: prathameshgujja10@gmail.com
 * Location: Pune, INDIA
 
 
 # Portfolio
 This is my portfolio I will keep updating it
+
+# FOR MORE VISIT:https://pratham27092000.github.io/Portfolio/index.html
+
