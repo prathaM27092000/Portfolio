@@ -2,7 +2,7 @@
 
 ## Overview
 
-This portfolio showcases my work as a Full Stack Developer. It's designed to provide a comprehensive view of my skills, experience, and projects. The site is built using HTML, CSS, and JavaScript, with animations handled by the AOS library.
+This portfolio showcases my work as Data Analyst, Full Stack Developer. It's designed to provide a comprehensive view of my skills, experience, and projects. The site is built using Python, SQL, Excel, Power BI, Tableau And HTML, CSS, and JavaScript, with animations handled by the AOS library.
 
 ## Sections
 
@@ -18,9 +18,15 @@ The portfolio includes the following sections:
 
 The portfolio is built using the following technologies:
 
+* Python
+* SQL
+* Excel
+* Power BI
+* Tableau
+* JavaScript
 * HTML
 * CSS
-* JavaScript
+* React js
 * AOS (Animate on Scroll Library)
 
 * Email: prathameshgujja10@gmail.com
