@@ -24,9 +24,8 @@ ul {
 /* Container */
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1450px;
     margin: auto;
-    flex-grow: 1;
 }
 
 /* Navbar */
@@ -59,6 +58,16 @@ nav ul li a.active,
 nav ul li a:hover {
     color: #000000;
 }
+/* Active nav link in light mode */
+nav.container ul li a.active {
+  color: #000; /* or whatever your light‑mode active color is */
+}
+
+/* Active nav link in dark mode */
+.dark-theme nav.container ul li a.active {
+  color: #fff; /* choose a bright color that stands out on dark */
+}
+
 
 /* Hero Section */
 .hero {
