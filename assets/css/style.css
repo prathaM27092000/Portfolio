@@ -1,4 +1,7 @@
 /* Global Styles */
+:root {
+  color-scheme: light dark;
+}
 * {
     margin: 0;
     padding: 0;
@@ -23,19 +26,21 @@ ul {
 
 /* Container */
 .container {
-    width: 90%;
-    max-width: 1450px;
+    width: 95%;
     margin: auto;
+    flex-grow: 1;
 }
 
-/* Navbar */
-nav {
-    background: #e1e1e2;
+
+/* Navbar (scoped only to nav.container) */
+nav.container {
+    background: #c7b299;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* better spacing */
     align-items: center;
 }
+
 
 nav .logo {
     font-size: 1.8rem;
@@ -56,18 +61,17 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 /* Active nav link in light mode */
 nav.container ul li a.active {
-  color: #000; /* or whatever your light‑mode active color is */
+  color: #ffffff; /* or whatever your light‑mode active color is */
 }
 
 /* Active nav link in dark mode */
 .dark-theme nav.container ul li a.active {
-  color: #fff; /* choose a bright color that stands out on dark */
+  color: #ffd103; /* choose a bright color that stands out on dark */
 }
-
 
 /* Hero Section */
 .hero {
@@ -108,6 +112,7 @@ nav.container ul li a.active {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 0.5rem;
   justify-content: space-between;
   padding: 60px 0;
   gap: 30px;
@@ -307,6 +312,7 @@ footer {
         align-items: center;
     }
 }
+
 .page-nav {
     display: flex;
     justify-content: center;
@@ -489,3 +495,20 @@ h1, h2, h3, h4, h5, h6 {
 .dark-theme h6 {
     color: #f0f0f0; /* or any light color */
 }
+
+/* Tiny vertical spacing between main sections */
+/* Add this at the very bottom of your style.css */
+
+/* Give every section a little vertical space */
+section.container {
+  margin-bottom: 4rem;  /* adjust “4rem” up or down to taste */
+}
+
+/* If you only want to affect the services grid, add a gap there too */
+.service-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;            /* adds both row and column gaps */
+  padding-bottom: 25px;
+}
+
