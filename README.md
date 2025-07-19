@@ -57,7 +57,7 @@ Interested in collaborating or want to know more?
 
 To view this portfolio:
 
-1. Visit [Pratham's Portfolio](https://pratham27092000.github.io/Portfolio/)
+1. Visit [My Portfolio](https://pratham27092000.github.io/Portfolio/)
 2. Browse through the projects and sections via the navigation bar.
 
 If you want to clone or run this site locally:
