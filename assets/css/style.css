@@ -368,11 +368,9 @@ footer {
     color: #888;
 }
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: auto;
+    margin-left: 1rem;
 }
+
 
 .theme-switch {
   position: relative;
@@ -412,74 +410,73 @@ footer {
 }
 
 /* When checked, move the slider */
-input:checked + .slider {
-  background-color: #333;
-}
-
-input:checked + .slider:before {
-  transform: translateX(24px);
-}
-.switch {
+.theme-switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 36px;
 }
 
-.switch input {
+.theme-switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  background-color: #ccc;
-  border-radius: 34px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: 0.4s;
+.switch {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8px;
-  font-size: 16px;
+  padding: 4px 8px;
+  background-color: #ccc;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.slider::before {
-  content: "";
+.switch .icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.slider {
   position: absolute;
-  height: 26px;
-  width: 26px;
-  left: 2px;
-  bottom: 2px;
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  top: 4px;
   background-color: white;
   border-radius: 50%;
-  transition: transform 0.4s;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-input:checked + .slider {
+/* ON State */
+.theme-switch input:checked + .switch {
   background-color: #333;
 }
 
-input:checked + .slider::before {
-  transform: translateX(30px);
+.theme-switch input:checked + .switch .slider {
+  transform: translateX(34px);
+}
+/* Default light mode styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
 }
 
-.icon {
-  z-index: 1;
-  pointer-events: none;
+/* Dark mode styles */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6 {
+    color: #f0f0f0; /* or any light color */
 }
-
-.sun {
-  color: #f39c12;
-}
-
-.moon {
-  color: #ecf0f1;
-}
-
