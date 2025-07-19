@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="Prathamesh Gujja">
     <title>Resume | Prathamesh Gujja</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body>
 
-    <nav class="container">
-        <div class="logo"><img src="assets/icons/logo.png" alt="PG" width="100px"></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="services.html">Services</a></li> -->
-            <li><a href="resume.html" class="active">Resume</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+<body>
+    <nav class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 2rem;">
+        <div class="logo">
+            <img src="assets/icons/logo.png" alt="PG" width="100px">
+        </div>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <ul style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switch-wrapper" style="margin-right: 20px;">
+                <div class="theme-switch">
+                    <input type="checkbox" id="darkModeToggle" />
+                    <label for="darkModeToggle" class="switch">
+                        <img src="assets/icons/sun.png" alt="Sun" class="icon sun" />
+                        <img src="assets/icons/moon.png" alt="Moon" class="icon moon" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </nav>
+
 
     <section class="container">
         <h2 data-aos="fade-up">Resume</h2>
@@ -27,7 +42,7 @@
         <div class="about-content" data-aos="fade-up">
             <h3>Experience</h3>
             <ul>
-                <li><strong>Internship</strong> - Seven Mentor (march 2024-sep 2024)</li>
+                <li><strong>Python Developer Intern</strong> - Seven Mentor (march 2024-sep 2024)</li>
                 <!-- <li><strong>Front-end Developer</strong> - XYZ Studios (2019-2022)</li>
                 <li><strong>Web Developer Intern</strong> - WebX (2017-2019)</li> -->
             </ul>
@@ -39,6 +54,12 @@
 
             <a href="assets/files/cv.pdf" class="btn-download" download>Download Full CV</a>
         </div>
+        <div class="page-nav">
+            <a href="index.html" class="nav-btn">Introduction</a>
+            <a href="Project.html" class="nav-btn">Projects</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+
     </section>
 
     <footer>
@@ -46,9 +67,27 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script>
-        AOS.init();
+        const toggle = document.getElementById('darkModeToggle'); // ✅ match your HTML input ID
+
+        // Load saved theme on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                toggle.checked = true;
+            }
+        });
+
+        // Toggle dark mode and save preference
+        toggle.addEventListener('change', function () {
+            document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
     </script>
 
+
+
 </body>
+
 </html>
