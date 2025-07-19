@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="Prathamesh Gujja">
     <title>Contact | Prathamesh Gujja</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -11,23 +12,29 @@
 
 <body>
 
-    <nav class="container">
+    <nav class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 2rem;">
         <div class="logo"><img src="assets/icons/logo.png" alt="PG" width="100px"></div>
-        <div style="display: flex; align-items: center; gap: 1.5rem;">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <ul style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">projects</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-           <div class="theme-switch-wrapper">
- <div class="theme-switch">
-  <input type="checkbox" id="darkModeToggle" />
-  <label for="darkModeToggle" class="switch">
-    <img src="assets/icons/sun.png" alt="Sun" class="icon sun" />
-    <img src="assets/icons/moon.png" alt="Moon" class="icon moon" />
-    <span class="slider"></span>
-  </label>
-</div>
+
+            <div class="theme-switch-wrapper" style="margin-right: 20px;">
+                <div class="theme-switch">
+                    <input type="checkbox" id="darkModeToggle" />
+                    <label for="darkModeToggle" class="switch">
+                        <img src="assets/icons/sun.png" alt="Sun" class="icon sun" />
+                        <img src="assets/icons/moon.png" alt="Moon" class="icon moon" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <section class="container">
         <h2 data-aos="fade-up">Contact Me</h2>
@@ -37,7 +44,7 @@
             <p>Phone: +91 9923743427</p>
             <p>Location: Pune, INDIA</p>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathameshgujja10@gmail.com&su=Contact%20via%20Portfolio"
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathameshgujja10@gmail.com&su=Contact%20via%20Project"
                 target="_blank" rel="noopener noreferrer" class="btn-download">
                 Send Email
             </a>
@@ -45,7 +52,7 @@
         <div class="page-nav">
             <a href="index.html" class="nav-btn">Introduction</a>
             <a href="resume.html" class="nav-btn">Resume</a>
-            <a href="portfolio.html" class="nav-btn">Projects</a>
+            <a href="Project.html" class="nav-btn">Projects</a>
             <a href="contact.html" class="nav-btn">Contact</a>
         </div>
 
@@ -60,19 +67,22 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script>
-    // Toggle dark mode and store preference
-    document.getElementById('theme-toggle').addEventListener('click', function () {
-        document.body.classList.toggle('dark-theme');
-        localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-    });
+        const toggle = document.getElementById('darkModeToggle'); // ✅ match your HTML input ID
 
-    // Apply theme based on saved preference
-    window.addEventListener('DOMContentLoaded', () => {
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-theme');
-        }
-    });
-</script>
+        // Load saved theme on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                toggle.checked = true;
+            }
+        });
+
+        // Toggle dark mode and save preference
+        toggle.addEventListener('change', function () {
+            document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+    </script>
 
 
 </body>
